@@ -16,6 +16,7 @@ $pp = new FormHandler('New Contact request');
 $validator = $pp->getValidator();
 $validator->fields(['Name','Email'])->areRequired()->maxLength(50);
 $validator->field('Email')->isEmail();
+$validator->field('Whatsapp')->maxLength(50);
 $validator->field('Message')->maxLength(6000);
 
 $mailer = $pp->getMailer();

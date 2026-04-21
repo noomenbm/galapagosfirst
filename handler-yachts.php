@@ -16,6 +16,7 @@ $pp = new FormHandler('New Yachts request');
 $validator = $pp->getValidator();
 $validator->fields(['Name','Email','Date','numtravelers','numnights','yachttype','yachtsbudget'])->areRequired()->maxLength(50);
 $validator->field('Email')->isEmail();
+$validator->field('Whatsapp')->maxLength(50);
 $validator->field('Message')->maxLength(6000);
 
 $mailer = $pp->getMailer();
