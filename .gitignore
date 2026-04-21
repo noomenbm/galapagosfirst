@@ -1,0 +1,9 @@
+# Large deployed media files
+media/
+
+# Source/design artifacts
+*.psd
+
+# OS-generated files
+Thumbs.db
+.DS_Store
